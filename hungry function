@@ -1,0 +1,44 @@
+Enter file contents hereimport java.util.Scanner;
+public class Hungry {
+	
+}
+	public static void main(String args[]){
+	
+		Scanner input = new Scanner(System.in);
+		
+		int select;
+		String result;
+		String[] food={"1.berry","2.carrot","3.cola"};
+	
+		 
+		System.out.println(" 무슨 음식을 선택하시겠습니까? 숫자를 선택해 주세요 ");
+	
+		for(String f : food )
+			System.out.println(f);
+		
+		select = input.nextInt();
+		
+		if(select!=1 && select!=2 && select!=3)
+			System.out.println("다른 숫자를 선택해 주세요");
+		
+	
+		switch(select){
+		
+		case 1 : 
+			System.out.println(" 딸기를 선택하셨습니다.");
+			result=food[select-1];
+			break;
+			
+		case  2:
+			System.out.println(" 당근을 선택하셨습니다.");
+			result=food[select-1];
+			break;
+		case 3 : 
+			System.out.println(" 콜라를 선택하셨습니다.");
+			result=food[select-1];
+			break;
+		}
+					
+	}
+	
+}
